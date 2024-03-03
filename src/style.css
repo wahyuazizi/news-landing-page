@@ -86,16 +86,31 @@ ul{
 }
 
 .flex-center{
-    display: flex;
     justify-content:center;
+}
+
+.flex-between{
+    justify-content: space-between;
 }
 
 .flex{
     display: flex;
 }
 
+.flex-col{
+    flex-direction: column;
+}
+
 .h-full{
     height:100vh;
+}
+
+.w-full{
+    width:100%;
+}
+
+.align-center{
+    align-self: center;
 }
 
 
