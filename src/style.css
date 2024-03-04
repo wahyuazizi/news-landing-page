@@ -64,9 +64,13 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
 nav{
+    position: absolute;
+    z-index: 10;
     width: 100%;
     background-color:var(--main-bg-color);
+    
 }
 
 a{
@@ -97,6 +101,26 @@ ul{
     display: flex;
 }
 
+.mb-0{
+    margin-bottom: 0;
+}
+
+.m-all{
+    margin: var(--base-space);
+}
+
+.ml{
+    margin-left: var(--base-space);
+}
+
+.mr{
+    margin-right: var(--base-space);
+}
+
+.mb-2{
+    margin-bottom:2rem;
+}
+
 .flex-col{
     flex-direction: column;
 }
@@ -117,3 +141,36 @@ ul{
 .padding{
     padding: .5rem;
 }
+
+
+img {
+    object-fit: cover;
+    }
+
+.bg-img{
+    height: 200px;
+    width: 100%;
+}
+
+
+.border-round{
+    border-radius: 1rem;
+}
+
+.container {
+    position: relative;
+}
+
+.text-over-img{
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+}
+
+#col-berita{
+    display:flex;
+}
+
+#col-berita div:nth-of-type(1) {flex-grow: 5;}
+#col-berita div:nth-of-type(2) {flex: 3;}
+#col-berita div:nth-of-type(3) {flex: 3;}
