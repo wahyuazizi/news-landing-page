@@ -22,6 +22,11 @@
     --color-secondary-2: #bac7cc;
 }
 
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
 *, *::after, *::before {
     box-sizing: inherit;
     padding: 0;
@@ -30,10 +35,11 @@
 
 body {
     line-height: 1.5;
-    /* font-size: 1rem; */
-    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    font-family: 'Archivo', sans-serif;
     padding-top: 8rem;
-    padding-bottom: 12rem;
+    padding-bottom: 1rem;
+    color: var(--color-secondary-1);
     
 }
 
@@ -49,6 +55,11 @@ img {
     overflow-clip-margin: content-box;
     overflow: clip;
 }
+
+/* h1{
+    font-weight: 800;
+    font-size: 2rem;
+} */
 
 .header{
     padding-bottom: 2rem;
@@ -131,11 +142,136 @@ img {
     padding: 3rem;
     align-self: baseline;
     flex: 2;
+    color: var(--color-primary);
 }
+
+.aside-img{
+    height: 12rem;
+    width: 18rem;
+    object-fit: cover;
+    margin-bottom: 2rem;
+}
+
 
 /* bundle */
 img,
 .news-cover,
 .news-aside{
     border-radius: 1rem;
+}
+
+.logo > img{
+    height: 6rem;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-secondary-1);
+}
+
+.footer-list{
+    color: var(--color-primary);
+}
+
+/* footer */
+.footer-menu{
+    background-color: var(--color-secondary-1);
+    padding: 3rem;
+    align-self: baseline;
+    border-radius: 1rem;
+    margin-top: 6.5rem;
+}
+
+.logo{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-family: "Paytone One", sans-serif;
+    font-size: 2rem;
+    color: var(--color-primary);
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    
+    body{
+        width: 768px;
+    }
+
+    .news-img-terkini{
+        width: 160px;
+    }
+
+    .news-others{
+        justify-content: space-between;
+    }
+
+
+    .news-others > .news-item{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    /* For mobile phones: */
+
+    html {
+        font-size: 100%;
+    }
+
+    .news-cover{
+        height: unset;
+    }
+
+    .news-inner,
+    .news-item,
+    .news-others{
+        flex-direction: column;
+    }
+
+    .news-img-terkini,
+    .news-img-others{
+        object-fit: cover;
+    }
+
+    .news-others > .news-item{
+        gap: unset;
+    }
+
+    .aside-img{
+        height: unset;
+    width: 100%;
+    }
+
+    .news-img-terkini,
+    .news-img-others{
+        width: unset;
+        height: unset;
+    }
+
+    .footer-menu,
+    .logo-footer{
+        flex-direction: column;
+    }
+
+    body{
+        font-size: 1.8rem;
+    }
+
+
+    h1{
+        font-size: 3rem;
+    }
+
+    .header-nav{
+        display: none;
+    }
+
+    
+
+    .footer-menu-list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
