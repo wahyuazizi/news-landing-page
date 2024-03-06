@@ -3,219 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/style.css">
-    <title>NewsKoo</title>
+    <link rel="stylesheet" href="/src/style.css">
+    <title>Document</title>
 </head>
 <body>
-    <header class="z-10">
-        <div class="flex bg-dark">
-            <div>
-                <img src="assets/logo-main.png" alt="" srcset="" class="logo-main">
-            </div>
-            <div></div>
-            <div></div>
-        </div>
-        <nav class="flex flex-center">
-            <ul class="flex border-right flex-between m-all">
-                <li class="m-all"><a class="t-hover padding pl-1 pr-1 text-white" href="#">Beranda</a></li>
-                <li class="m-all"><a class="t-hover padding pl-1 pr-1 text-white" href="#">Untuk Anda</a></li>
-                
-            </ul>
-            <ul class="flex flex-between m-all">
-                <li class="m-all"><a class="t-hover padding pl-1 pr-1 text-white" href="#">Indonesia</a></li>
-                <li class="m-all"><a class="t-hover padding pl-1 pr-1 text-white" href="#">Dunia</a></li>
-                <li class="m-all"><a class="t-hover padding pl-1 pr-1 text-white" href="#">Sepak Bola</a></li>
-                <li class="m-all"><a class="t-hover padding pl-1 pr-1 text-white" href="#">Bisnis</a></li>
-                <li class="m-all"><a class="t-hover padding pl-1 pr-1 text-white" href="#">Teknologi</a></li>
-
-            </ul>
-        </nav>
-    </header>
-    <main class="flex flex-col flex-center z-0 ">
-        <div class="flex self-center w-full flex-center mb-4 h-full mt-4">
-
-            <div class="col-10 flex-center flex flex-col self-center ">
-                <div class="w-full">
-                
-                    <div class="container mb-2 bg-img">
-                        <!-- <div class=""> -->
-                            <div class="img-shadow">
-
-                                <img class="bg-img border-round" src="assets/1.jpg" alt="" srcset="">
-                            </div>
-                            <div class="text-over-img text-white">
-                                <h3><a class=" text-white" href="#">Judul</a> </h3>
-                                    <p>teks berita</p>
-                            </div>
-                        <!-- </div> -->
-                    </div>
-                    <div id="col-berita" class="flex flex-between">
-                        <div class="flex flex-col">
-                            <div class="">
-                                <h2><a class="" href="#">Judul</a> </h2>
-                                <p>teks berita</p>
-                            </div>
-                            <div class="">
-                                <form action="" method="get" class="w-full">
-                                    <input id="search" class="w-full" type="search" name="search" placeholder="Cari tahu apa yang sedang terjadi">
-                                </form>
-                            </div>
-                        </div>
-                        <div class="container ml mr bg-img">
-                            <div class="img-shadow">
-
-                                <img class="bg-img border-round" src="assets/2.jpg" alt="" srcset="">
-                            </div>
-                            <div class="text-over-img text-white">
-                                <h3><a class=" text-white" href="#">Judul</a> </h3>
-                                    <p>teks berita</p>
-                            </div>
-                        </div>
-                        <div class="container bg-img">
-                            <div class="img-shadow">
-
-                                <img class="bg-img border-round" src="assets/3.jpg" alt="" srcset="">
-                            </div>
-                            <div class="text-over-img text-white">
-                                <h3><a class=" text-white" href="#">Judul</a> </h3>
-                                    <p>teks berita</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="flex flex-col flex-center">
-            <div class="flex flex-center self-center  col-10">
-                <article id="col-article" class="flex flex-between w-full">
-                    <div class="flex flex-col flex-center">
-                        <div class="">
-                            <div class="mb-2">
-                                <h3>Today's News</h3>
-                            </div>
-                            <div class="container w-full mb-2 bg-img">
-                                <div class="img-shadow">
-
-                                    <img class="bg-img border-round" src="assets/4.jpg" alt="" srcset="">
-                                </div>
-                                <div class="text-over-img text-white">
-                                    <h3><a class=" text-white" href="#">Judul</a> </h3>
-                                    <p>teks berita</p>
-                                </div>
-                            </div>
-                            <div class="container w-full mb-2 bg-img">
-                                <div class="img-shadow">
-
-                                    <img class="bg-img border-round" src="assets/5.jpg" alt="" srcset="">
-                                </div>
-                                <div class="text-over-img text-white">
-                                    <h3><a class=" text-white" href="#">Judul</a> </h3>
-                                    <p>teks berita</p>
-                                </div>
-                            </div>
-                            <div class="container w-full mb-2 bg-img">
-                                <div class="img-shadow">
-                                    
-                                    <img class="bg-img border-round" src="assets/6.jpg" alt="" srcset="">
-                                </div>
-                                <div class="text-over-img text-white">
-                                    <h3><a class="text-white" href="#">Judul</a> </h3>
-                                    <p>teks berita</p>
-                                </div>
-                            </div>
-                            <div>
-                                <ul class="pagination">
-                                    <li><a href="#">&#11207;</a></li>
-                                    <li><a href="#">1</a></li>
-                                    <li><a class="active" href="#">2</a></li>
-                                    <li><a href="#">3</a></li>
-                                    <li><a href="#">4</a></li>
-                                    <li><a href="#">5</a></li>
-                                    <li><a href="#">6</a></li>
-                                    <li><a href="#">7</a></li>
-                                    <li><a href="#">&#11208;</a></li>
-                                  </ul>
-                                  
-                            </div>
-                        </div>
-                    </div>
-    
-                    <aside id="aside-title" class="flex flex-col ml-4">
-                        <div>
-
-                            <div  class="mb-2 ">
-                                <h3>Trending</h3>
-                            </div>
-                            <div class="flex flex-col flex-between">
-                                <div class="container flex mb-2">
-                                    
-                                    <img class="bg-img-sm border-round" src="assets/7.jpg" alt="" srcset="">
-                                    <div class="ml">
-                                        <h4><a href="#">Judul</a> </h4>
-                                        <p>teks berita</p>
-                                    </div>
-                                </div>
-                                <div class="container flex mb-2 ">
-                                    
-                                    <img class="bg-img-sm border-round" src="assets/8.jpg" alt="" srcset="">
-                                    <div class="ml">
-                                        <h4><a href="#">Judul</a> </h4>
-                                        <p>teks berita</p>
-                                    </div>
-                                </div>
-                                <div class="container flex mb-2">
-                                    
-                                    <img class="bg-img-sm border-round" src="assets/9.jpg" alt="" srcset="">
-                                    <div class="ml">
-                                        <h4><a href="#">Judul</a> </h4>
-                                        <p>teks berita</p>
-                                    </div>
-                                </div>
-                                <div class="container flex mb-2">
-                                    
-                                    <img class="bg-img-sm border-round" src="assets/1.jpg" alt="" srcset="">
-                                    <div class="ml">
-                                        <h4><a href="#">Judul</a> </h4>
-                                        <p>teks berita</p>
-                                    </div>
-                                </div>
-                                <div class="container flex mb-2">
-                                    
-                                    <img class="bg-img-sm border-round" src="assets/5.jpg" alt="" srcset="">
-                                    <div class="ml">
-                                        <h4><a href="#">Judul</a> </h4>
-                                        <p>teks berita</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                     </aside>
-                </article>
-                
-            </div>
-        </div>
-    </main>
-    <footer class="flex flex-center w-full  ">
-        <div class="flex flex-between col-10">
-            <div class="flex flex-col flex-between">
-                <!-- <div class="flex flex-between"> -->
-                    <ul class="flex">
-                        <li class="border-right"><a class="mr text-white" href="#">Tentang Kami</a></li>
-                        <li class="border-right"><a class="mr ml text-white" href="#">Redaksi</a></li>
-                        <li class="border-right"><a class="mr ml text-white" href="#">Pedoman Media Siber</a></li>
-                        <li class="border-right"><a class="mr ml text-white" href="#">Karir</a></li>
-                        <li class="border-right"><a class="mr ml text-white" href="#">Dislcaimer</a></li>
-                        <li class="border-right"><a class=" mr ml text-white" href="#">NewsKoo Events</a></li>
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="">
+                    NewsKoo
+                </a>
+                <nav>
+                    <ul class="header-list">
+                        <li class="header-item">Home</li>
+                        <li class="header-item">Trending</li>
+                        <li class="header-item">Local</li>
+                        <li class="header-item">Sport</li>
+                        <li class="header-item">Categories</li>
                     </ul>
-                <!-- </div> -->
-                <div id="copyright">
-                    <p>2024 NewsKoo Indonesia, A Trustmedia Company</p>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+
+    </nav>
+
+    <main>
+        <section>
+            <div class="container">
+                <img src="/assets/1.jpg" alt="" srcset="" class="news-cover">
+            </div>
+        </section>
+        <section class="news-section">
+            <div class="container">
+                <div class="news-inner">
+                    <article class="news-main">
+                        <h1>Terkini</h1>
+                        <div class="news-item">
+                            <img src="/assets/2.jpg" alt="" srcset="" class="news-img-terkini">
+                            <div class="news-details">
+                                <div class="news-info">
+                                    <h1>Judul Berita Terkini</h1>
+                                    <p>Ini adalah deskripsi singkat tentang berita terkini</p>
+                                </div>
+                                <a href="#">Selengkapnya</a>
+                            </div>
+                        </div>
+                    </article>
+                    <aside class="news-aside">
+                        <h1>Trending</h1>
+                        <ul>
+                            <li>
+                                <img src="" alt="">
+                                <div>
+                                    <h3>Judul Trending</h3>
+                                    <p>Ini adalah deskripsi singkat tentang berita terkini</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="" alt="">
+                                <div>
+                                    <h3>Judul Trending</h3>
+                                    <p>Ini adalah deskripsi singkat tentang berita terkini</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </aside>
                 </div>
             </div>
-            <div >
-                <img class="logo-footer" src="assets/logo.png" alt="" srcset="">
-            </divid=>
-        </div>
-    </footer>
+        </section>
+        <section>
+            <div class="container">
+
+                <div class="news-others">
+                    <div class="news-item">
+                        <img src="/assets/4.jpg" alt="" srcset="" class="news-img-others">
+                        <div class="news-details">
+                            <h3>Judul Berita Terkini</h1>
+                            <p>Ini adalah deskripsi singkat tentang berita terkini</p>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <img src="/assets/5.jpg" alt="" srcset="" class="news-img-others">
+                        <div class="news-details">
+                            <h3>Judul Berita Terkini</h1>
+                            <p>Ini adalah deskripsi singkat tentang berita terkini</p>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <img src="/assets/6.jpg" alt="" srcset="" class="news-img-others">
+                        <div class="news-details">
+                            <h3>Judul Berita Terkini</h1>
+                            <p>Ini adalah deskripsi singkat tentang berita terkini</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
