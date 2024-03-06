@@ -191,6 +191,12 @@ a{
     color: var(--color-primary);
 }
 
+div #mobile-nav, .icon{
+    display: none;
+}
+
+
+
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     
@@ -274,4 +280,27 @@ a{
         flex-wrap: wrap;
         justify-content: center;
     }
+
+    .mobile-header-list{
+        flex-direction: column;
+    }
+
+    .mobile-header-item{
+        padding: 1rem 2rem;
+    }
+
+    .header-inner a.icon {
+        background: var(--color-secondary-1);
+        display: block;
+      }
+
+      .header-inner a{
+        padding: .725rem 1rem ;
+        color: var(--color-primary);
+
+        .header-inner a:hover {
+            background-color: var(--color-primary);
+            color: var(--color-secondary-2);
+          }
+      }
 }

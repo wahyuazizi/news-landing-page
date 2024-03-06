@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Paytone+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
 <body>
@@ -25,13 +26,22 @@
                         <li class="header-item"><a href="#">Categories</a></li>
                     </ul>
                 </nav>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                  </a>
             </div>
         </div>
     </header>
 
-    <nav>
-
-    </nav>
+    <div >
+        <ul class="mobile-header-list " id="mobile-nav">
+            <li class="mobile-header-item"><a href="#">Home</a></li>
+            <li class="mobile-header-item"><a href="#">Trending</a></li>
+            <li class="mobile-header-item"><a href="#">Local</a></li>
+            <li class="mobile-header-item"><a href="#">Sport</a></li>
+            <li class="mobile-header-item"><a href="#">Categories</a></li>
+        </ul>
+    </div>
 
     <main>
         <section>
@@ -121,5 +131,7 @@
             </div>
         </footer>
     </main>
+
+    <script src="/src/js/script.js"></script>
 </body>
 </html>
